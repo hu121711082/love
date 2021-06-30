@@ -1,0 +1,44 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <link rel="stylesheet" href="./index.css">
+    <script src="./rem.js"></script>
+</head>
+<body>
+    <div class="wrapper">
+        <h1>文案标题</h1>
+        <div class="img">
+            图片
+        </div>
+        <div class="contenr">
+            <p>文案内容</p>
+        </div>
+        <div class="btn-box">
+            <div class="btn btn-Yes">Yes  ❤</div>
+            <div class="btn btn-No">No  ✖</div>
+        </div>
+    </div>  
+    <script src="./index.js"></script>
+    <script>    
+        let btn_Yes = document.querySelector('.btn-Yes')
+        let btn_No = document.querySelector('.btn-No')
+        function yes() {
+            console.log('同意')
+        }
+        function no() {
+            console.log('不同意')
+        }
+        
+
+        function aa() {
+            btn_Yes.onclick = yes
+            btn_No.onclick = no
+        }
+        aa()
+    </script>
+</body>
+</html>
