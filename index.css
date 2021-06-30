@@ -1,0 +1,16 @@
+.wrapper {
+    padding: .4rem;
+}
+
+
+.wrapper .btn-box {
+    display: flex;
+}
+.wrapper .btn-box .btn {
+    margin: 0 .1rem;
+    background: rgba(0,0,0,0.6);
+    border: 1px solid white;
+    padding: .1rem .15rem;
+    border-radius: .05rem;
+    color: white;
+}
