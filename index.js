@@ -12,10 +12,10 @@ let info = document.querySelector('.info')
 function yes() {
     yesBox.style.display = 'block'
     btnBox.style.display = 'none'
-    setTimeout(() => {
-        wrapper.style.display = 'none'
-        info.style.display = 'block'
-    }, 2000);
+    // setTimeout(() => {
+    //     wrapper.style.display = 'none'
+    //     info.style.display = 'block'
+    // }, 2000);
 }
 function no() {
     num++
