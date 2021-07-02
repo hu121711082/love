@@ -1,10 +1,51 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    
+}
 .wrapper {
-    padding: .4rem;
+    display: block;
+    padding: .6rem .4rem;
+    position: relative;
+    height: 100vh;
+    
+}
+.wrapper::after {
+    content: "";
+    position: absolute;
+    top: 0;
+    left: 0;
+    right: 0;
+    bottom: 0;
+    background-image: url('http://w1.zxgnz.cn/templates/staric/h5/temp3/images/2.jpg');
+    background-size: 100%;
+    opacity: 0.5;
+    z-index: -1;
+
+}
+.contenr {
+    margin-bottom: 10px;
+}
+.contenr p {
+    margin: 10px 0;
+    font-size: .13rem;
+}
+.actev {
+    display: none;
 }
 
-
-.wrapper .btn-box {
-    display: flex;
+.no-box {
+    background-color: #fff;
+    padding: 10px;
+    position: relative;
+    display: none;
+}
+.close {
+     position: absolute;
+     top: 5px;
+     right: 10px;
+     color: gray;    
 }
 .wrapper .btn-box .btn {
     margin: 0 .1rem;
