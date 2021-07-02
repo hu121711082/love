@@ -58,3 +58,7 @@
     border-radius: .05rem;
     color: white;
 }
+
+.info {
+    display: none;   
+}
