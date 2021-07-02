@@ -6,7 +6,11 @@ let btn_Yes = document.querySelector('.btn-Yes')
         let noBox = document.querySelector('.no-box')
         let yesBox = document.querySelector('.yes-box')
         function yes() {
-            console.log('同意')
+            yesBox.style.display = 'block'
+            btnBox.style.display = 'none'
+            setTimeout(() => {
+                location.href('http://w1.zxgnz.cn/article/h5/20200517/15a5257d2d163fc62e0cb9cedf2d3fb8.html')
+            }, 2000);
         }
         function no() {
             num++
@@ -31,11 +35,4 @@ let btn_Yes = document.querySelector('.btn-Yes')
         noBox.onclick = function() {
             btnBox.style.display = 'block'
             noBox.style.display = 'none'
-        }
-        yesBox.onclick = function() {
-            yesBox.style.display = 'block'
-            btnBox.style.display = 'none'
-            setTimeout(() => {
-                location.href('http://w1.zxgnz.cn/article/h5/20200517/15a5257d2d163fc62e0cb9cedf2d3fb8.html')
-            }, 2000);
         }
